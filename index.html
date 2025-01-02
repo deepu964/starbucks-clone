@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+        <div class="nav-left">
+           <div class="nav-img">
+             <img src="data:image/png;base64,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" alt="">
+           </div>
+            <div class="menu">
+                <ul class="list">
+                    <li class="menu">MENU</li>
+                    <li class="reward">REWARDS</li> 
+                    <li class="gift">GIFT CARDS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="store">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 class="h">Find a store</h3>
+            </div>
+            <div class="login">
+                <button class="sign">Sign in</button>
+                <button class="log">Join now</button>
+            </div>
+        </div>
+    </div>
+    <div class="nav-shadow"></div>
+  </header>
+<hr>
+  <!--relative section  -->
+  <div class="relative-shell">
+
+    <div class="sub-cont">
+        <div class="sub-image">
+            <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-96033.jpg" alt=""> 
+         </div>
+        <div class="sub-concept">
+            <h1 class="concept">Our holiday game is here to play</h1>
+            <P class=" qut">Pop in for chances to win $20,000 in Delta Gift Cards or Starbucks for Life!*</P>
+            <button class="play1">play now</button>
+        </div>
+    </div>
+    <div class="sub-cont1">
+        <div class="sub-concept1">
+            <h1 class="concept">New to the nice list</h1>
+            <P class=" qut">Celebrate the season with a new refreshingly festive Cran-Merry Orange Lemonade Refresher or Cran-Merry Drink.</P>
+            <button class="play2">Order now</button>
+        </div>
+        <div class="sub-image1">
+            <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-95363.jpg" alt="">
+         </div>
+       
+    </div>
+    <div class="sub-cont2">
+        <div class="sub-image2">
+             <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-95365.jpg" alt=""> 
+     </div>
+        <div class="sub-concept2">
+            <h1 class="concept">Merrily delicious</h1>
+            <P class=" qut">Grab a toasty warm sandwich or a new Turkey Sage Danish and make your afternoon feel oh-so bright.</P>
+            <button class="play3">Order now</button>
+        </div>
+    </div>
+    <div class="sub-cont3">
+        <div class="sub-concept3">
+            <h1 class="concept">Your cheer is here</h1>
+            <P class=" qut">Join Starbucks® Rewards and get a free drink with qualifying purchase during your first week and let’s make your holidays even merrier.**</P>
+            <button class="play4">Join now</button>
+        </div>
+        <div class="sub-image3">
+                <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-95715.jpg" alt=""> 
+         </div>
+        
+    </div>
+    <div class="sub-cont4">
+        <div class="sub-image4">
+             <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-95948.jpg" alt=""> 
+         </div>
+        <div class="sub-concept4">
+            <h1 class="concept">A beloved tradition returns</h1>
+            <P class=" qut">Starbucks® Christmas Blend is here to celebrate 40 years as a robust dark roast with notes of spiced chocolate and spruce tips.</P>
+            <button class="play5">Order now</button>
+        </div>
+    </div>
+    <div class="sub-cont5">
+        <div class="sub-concept5">
+            <h1 class="concept">Buy a box, we’ll give back</h1>
+            <P class=" qut">In partnership with Feeding America®, protein box purchase helps support hunger relief in your community.***</P>
+            <button class="play6">Learn more</button>
+        </div>
+        <div class="sub-image5">
+               <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-95723.jpg" alt=""> 
+          </div>
+       
+    </div>
+
+  </div>
+
+  <!--- information section  -->
+
+<div class="information">
+    <div class="inform">
+    <div class="first-para">
+        <p>*No Purchase Necessary, U.S. 18+. See <span class="rule"> Official Rules</span> for alternate method. Enter by 1/5/25. Starbucks for Life means the winner will receive a daily credit for 30 years for one free food or beverage item at participating Starbucks stores in the U.S. Excludes alcohol.</p>
+    </div>
+    <div class="second-para">
+        <p>**Valid only for new Starbucks Rewards members for 7 days from sign up. Offer good at participating stores for a handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol, Starbucks Card and Starbucks Card reloads. Limit one per member. Cannot be combined with other offers or discounts. Excludes delivery services. Sign up before 1/2/2025 to be eligible.</p>
+    </div>
+    <div class="third-para">
+        <p>***At participating Starbucks stores within the U.S. from 11/19/24 to 1/2/25, for each protein box sold, Starbucks will donate the monetary equivalent of one meal to Feeding America®. $1 helps provide at least 10 meals secured by Feeding America on behalf of local partner food banks.</p>
+    </div>
+    </div>
+</div>
+  <!--- Footer section  -->
+  <div class="global-footer">
+    <div class="footer-shadow">
+    <div class="left-footer">
+        <div class="about-foot">
+            <h2>About Us</h2>
+            <ul class="li-foot">
+                    <li>Our Company</li>
+                    <li>Our Coffee </li>
+                    <li>About Starbucks</li>
+                    <li>Starbucks Archive</li>
+                    <li>Investor Relations</li>
+                    <li> Customer Service</li>
+                    <li>Contact Us</li>
+                </ul>
+         </div>
+        <div class="about-foot">
+                <h2> Careers</h2>
+                <ul class="li-foot">
+                    <li>Culture and Values</li>
+                    <li class="line-hieght">Inclusion, Diversity, & Belonging </li>
+                    <li class="line-hieght">College Achievement Plan</li>
+                    <li>Alumni Community</li>
+                    <li>U.S. Careers</li>
+                    <li>International Careers</li>
+                    
+                </ul>
+        </div>
+        <div class="about-foot">
+                <h2>Social Impact</h2>
+                 <ul class="li-foot">
+                     <li>Communities</li>
+                     <li>Starbucks Foundation</li>
+                     <li>Sustainability </li>
+                     <li class="line-hieght">Environmental and Social Impact Reporting</li>
+                 </ul>
+        </div>
+        <div class="about-foot">
+                <h2>For Business Partners</h2>
+                 <ul class="li-foot">
+                    <li class="line-hieght">Landlord Support Center</li>
+                    <li>Suppliers </li>
+                    <li class="line-hieght">Corporate Gift Card Sales</li>
+                    <li class="line-hieght">Office and Foodservice Coffee</li>
+                 </ul>
+        </div>
+        <div class="about-foot">
+                <h2>Order and Pick Up</h2>
+                <ul class="li-foot">
+                    <li>Order on the App</li>
+                    <li>Order on the Web</li>
+                    <li>Delivery</li>
+                    <li class="line-hieght">Order and Pick Up Options</li>
+                    <li class="line-hieght">Explore and Find Coffee for Home</li>
+                 </ul>
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="line"></div>
+ 
+  <!--- Footer  end section  -->
+  <div class="footer-end">
+    <div class="footer">
+        <div class="end-foot">
+            <ul class="icon">
+                <li class="icn"><a href=""><i class="fa-brands fa-spotify"></i></a></li>
+                <li class="icn"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="icn"><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li class="icn"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="icn"><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="icn"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+        <ul class="last-p">
+            <li class="under-li-1"> Privacy Notice</li>
+            <li class="under-li-2">Consumer Health Privacy Notice</li>
+            <li class="under-li-3">Terms of Use</li>
+            <li class="under-li-4">Do Not Share My Personal Information</li>
+            <li class="under-li-5">CA Supply Chain Act</li>
+            <li class="under-li-6">Accessibility</li>
+            <li class="under-li-7">Cookie Preferences</li>
+        </ul>
+        <p class="p">© 2025 Starbucks Coffee Company. All rights reserved.</p>
+    </div>
+  </div>
+
+</body>
+</html>
